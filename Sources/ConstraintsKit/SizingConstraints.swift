@@ -40,7 +40,7 @@ public extension UIView {
     // MARK: Width
 
     @discardableResult
-    func equalsWidth(to view: UIView, multiplier: CGFloat = 1) -> Self {
+    func equalsWidth(to view: UIView, multiplier: CGFloat) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
 
         widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: multiplier).isActive = true
@@ -69,7 +69,7 @@ public extension UIView {
     // MARK: Height
 
     @discardableResult
-    func equalsHeight(to view: UIView, multiplier: CGFloat = 1) -> Self {
+    func equalsHeight(to view: UIView, multiplier: CGFloat) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
 
         heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: multiplier).isActive = true
